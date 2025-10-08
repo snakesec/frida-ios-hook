@@ -2,9 +2,9 @@ rm -rf /opt/ANDRAX/frida-ios-hook
 
 /opt/ANDRAX/python3.13/bin/python3 -m venv /opt/ANDRAX/frida-ios-hook
 
-source /opt/ANDRAX/PYENV/python3/bin/activate
+source /opt/ANDRAX/frida-ios-hook//bin/activate
 
-/opt/ANDRAX/PYENV/python3/bin/pip3 install -r requirements.txt
+/opt/ANDRAX/frida-ios-hook/bin/pip3 install -r requirements.txt
 
 if [ $? -eq 0 ]
 then
@@ -15,7 +15,7 @@ else
   exit 1
 fi
 
-/opt/ANDRAX/PYENV/python3/bin/python3 setup.py
+/opt/ANDRAX/frida-ios-hook/bin/python3 setup.py
 
 if [ $? -eq 0 ]
 then
@@ -26,7 +26,7 @@ else
   exit 1
 fi
 
-cp -Rf frida-ios-hook /opt/ANDRAX/frida-ios-hook
+cp -Rf frida-ios-hook /opt/ANDRAX/frida-ios-hook/package
 
 if [ $? -eq 0 ]
 then
