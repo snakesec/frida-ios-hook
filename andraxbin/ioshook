@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source /opt/ANDRAX/PYENV/python3/bin/activate
+source /opt/ANDRAX/frida-ios-hook/bin/activate
 
-/opt/ANDRAX/PYENV/python3/bin/python3 /opt/ANDRAX/frida-ios-hook/ioshook "$@"
+/opt/ANDRAX/frida-ios-hook/bin/python3 /opt/ANDRAX/frida-ios-hook/package/ioshook "$@"
