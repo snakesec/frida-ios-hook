@@ -1,0 +1,9 @@
+colorlog
+frid
+frida-tools
+scp
+requests
+paramiko
+tqdm
+psutil
+reflutter
