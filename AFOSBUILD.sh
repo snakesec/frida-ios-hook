@@ -1,5 +1,7 @@
 rm -rf /opt/ANDRAX/frida-ios-hook
 
+/opt/ANDRAX/python3.13/bin/python3 -m venv /opt/ANDRAX/frida-ios-hook
+
 source /opt/ANDRAX/PYENV/python3/bin/activate
 
 /opt/ANDRAX/PYENV/python3/bin/pip3 install -r requirements.txt
